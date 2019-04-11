@@ -1,0 +1,213 @@
+@media only screen and (max-width: 1400px){
+	.cs-container { max-width: 85%!important;}
+	.home .sec-2 .list-hldr { max-width: 90%!important;}
+	/*FONTS 1st changes*/
+	.home .sec-1 .hero h3{ font-size: 40px!important;}
+	.home .sec-1 .hero h4 { font-size: 25px!important; line-height: 25px!important;}
+	.about .sec-2 .hldr h3, .about .sec-2 .btm h3 { font-size: 35px!important;}
+	.quote h4 { font-size: 25px!important;}
+	.about .sec-2 .hldr p, .about .sec-2 .btm p, .about .sec-4 .hldr p, .about .sec-6 .hldr p {font-size: 20px!important; line-height: 30px!important;}
+
+
+	/*END OF FONTS 1st changes*/
+
+	/*SECTION PADDING*/
+	.home .sec-3, .home .sec-4, .home .sec-5, .home .sec-7, .home .sec-7, .about .sec-2, .about .sec-3 .top-part, .about .sec-4, .about .sec-6, .home .sec-2 { padding: 50px 0px!important;}
+	/*END OF SECTION PADDING*/
+
+	/*title margin*/
+	.home .sec-4 .sec-title { margin-bottom: 10px!important;}
+	.home .sec-4 .sec-title + p { font-size: 20px!important;}
+	.home .sec-5 .hldr h3 { margin-bottom: 10px!important;	}
+	/*END OF title margin*/
+
+
+	.home .sec-4 .hldr { max-width: 100%!important;}
+}
+
+
+@media only screen and (max-width: 1200px){
+	.cs-container { max-width: 90%!important;}
+	.mini-pad {padding: 0px 20px!important;}
+	.home .sec-3 .hldr .main-list > li .parent article h4 { font-size: 25px!important;}
+	.home .sec-3 .hldr .main-list > li .parent aside  {width: 90px!important;}
+	.home .sec-3 .hldr .main-list > li .parent article { width: calc(100% - 90px)!important;}
+	.links .hldr .left, .links .hldr .right { max-width: 50%!important;}
+	.links .hldr .cmn-class h5 a { font-size: 15px!important;}
+	.inner-wrap { max-width: 100%!important;}
+
+}
+
+
+@media only screen and (max-width: 999px){
+
+	/*FONTS- change*/
+	.about .sec-2 .hldr h3, .about .sec-2 .btm h3 {font-size: 30px!important;}
+	.about .sec-2 .hldr p, .about .sec-2 .btm p, .about .sec-4 .hldr p, .about .sec-6 .hldr p {font-size: 17px!important; line-height: 27px!important;}
+	.quote h4 { font-size: 20px!important; line-height: 30px!important;}
+	.about .sec-3 .slider-for .item .hldr article .block h4  {font-size: 50px!important}
+	/*END OF FONTS- change*/
+	
+	.cs-container { max-width: 100%!important; padding: 0px 30px!important;}
+	header .hldr article ul li { display: none;}
+	header .hldr article ul li:first-child, header .hldr article ul li:nth-child(2) { display: block;}
+	header .hldr article ul li img { width: 30px!important; height: 30px!important;}
+	header .hldr article { top: 10px!important; transform: translate(0, 0)!important;}
+	.burger { display: block!important;}
+
+	header .nav-list { position: fixed!important; width: 100%!important; height: 100%!important; z-index: 99!important; top: 0!important; padding: 60px 60px!important; transform: translate(-110%, 0); transition: 0.5s ease-in-out;}
+	header .nav-list ul li { width: 100%!important; border-right: 0px!important; margin-bottom: 5px;  opacity: 0;}
+	header .nav-list ul li a { padding: 15px 10px!important;}
+
+	.nav-list  .cs-container  { padding: 0px!important;}
+	header .nav-list .close- { display: block!important;}
+	header .hldr aside { max-width: 185px!important;}
+	.home .sec-1 aside, .about .sec-1 aside { height: calc(100vh - 74px)!important;}
+	/*.mini-pad {padding: 0px 0px!important;}*/
+	.prop-finder .btm .main-list > li:first-child { width: 100%!important; padding-right: 0px!important; margin-bottom: 15px;} 
+	.prop-finder .btm .main-list  { justify-content: center!important;}
+	.home .sec-3 .hldr .main-list > li .parent article { width: 100%!important; padding-left: 0px!important;}
+	.home .sec-3 .hldr .main-list > li .parent aside  { width: 100%!important;}
+	.home .sec-3 .hldr .main-list > li .parent aside img { display: block; margin: 0 auto 15px!important;}
+	.home .sec-3 .hldr .main-list > li .parent article h4 { text-align: center!important;}
+	.home .sec-4 .hldr article { width: 100%!important; padding-top: 40px!important;}
+	.home .sec-4 .hldr aside { margin:  0 auto!important;}
+	.home .sec-4 .hldr aside span { display: none!important; }
+	.home .sec-4 .hldr article ul li { width: 50%!important;}
+	.home .sec-4 .hldr article ul li:nth-child(odd) { padding-right: 15px;}
+	.home .sec-4 .hldr article ul li:nth-child(even) { padding-left: 15px;}
+	.home .sec-4 .hldr article ul { display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;  -webkit-flex-flow: row wrap;  justify-content: center;  flex-wrap: wrap; }
+	.home .sec-4 .hldr article ul li .cmn-class::after { display: none!important;}
+	.home .sec-4 .hldr article ul li .cmn-class h6 { max-width: 100%!important;}
+
+	.home .sec-5 .hldr .main-list { max-width: 100%!important; min-width: auto!important;}
+	.home .sec-5 .hldr .main-list li { width: 50%!important;}
+	.home .sec-5 .hldr .main-list li .box { margin: 0 auto; max-width: 210px; width: 100%;}
+
+	.home .sec-7 .testi-carousel .item { height: auto!important;}
+	.home .sec-7 .testi-carousel .item .hldr  {width: 100%!important;}
+	.home .sec-7 .testi-carousel .owl-stage {display: block!important;}
+	.home .sec-7 .testi-carousel .item .hldr article p { width: 100%;}
+	.home .sec-7 .testi-carousel .item .hldr .new { position: relative!important;}
+	.home .sec-7 .testi-carousel .item .hldr article { padding: 20px 25px!important;}
+
+	footer .footer-wrap, .wrapper { max-width: 100%!important; padding: 0px 30px!important;}
+	footer .footer-wrap { min-width: auto!important}
+	footer .hldr .btm .main-list > li:first-child { width: 100%!important; border-right: 0px!important; padding-right: 0px!important; margin-bottom: 20px;}
+	footer .hldr .btm .main-list > li:first-child img { margin: 0 auto 15px!important; display: block}
+	footer .hldr .btm .main-list > li:first-child p { text-align: center!important;}
+	footer .hldr .top { margin-bottom: 40px!important;}
+	footer .hldr .btm .main-list > li:nth-child(2), footer .hldr .btm .main-list > li:nth-child(3), footer .hldr .btm .main-list > li:last-child { width: 33.3%!important;}
+	footer .hldr .btm .main-list > li:last-child { padding-left: 20px!important;}
+
+	.about .sec-2 .hldr p, .about .sec-4 .hldr p, .about .sec-6 .hldr p { margin-bottom: 20px!important;}
+	.about .sec-3 .slider-for .item .hldr aside { width: 100%!important; padding-left: 0px!important;}
+	.about .sec-3 .slider-for .item .hldr article { width: 100%!important;}
+
+	.about .sec-3 .slider-for .item .hldr aside .img-hldr { padding: 15px!important; height: 450px;}
+	.about .sec-3 .slider-for .item .hldr aside .img-hldr img { height: 100%; object-fit: cover;}
+	.about .sec-3 .slider-nav .slick-list { max-width: 100%!important; padding: 0px 30px!important;}
+
+	.about .sec-2 .btm { margin-top: 20px!important; padding-top: 20px!important; border-top: 2px solid #b1b1b2;}
+	.about .sec-2 .btm::after {display: none!important;}
+	.home .sec-4 .hldr article ul li .cmn-class { max-width: 100%!important;}
+
+	.home .sec-2.animated .hldr .list-hldr { max-width: 100%!important;}
+
+	.home .sec-4 .hldr article ul li .text-hldr { max-width: 100%!important;}
+
+}
+
+
+
+@media only screen and (max-width: 800px){
+	.prop-finder .btm .main-list > li:first-child ul li { width: 100%!important; padding-right: 0px!important; margin-bottom: 15px;}
+	.prop-finder .btm .main-list > li:first-child ul li:last-child { margin-bottom: 0!important;}
+	.prop-finder .btm .main-list > li:first-child ul li span { right: 0!important;}
+	.prop-finder .btm .main-list > li:first-child ul li .ar-down { right: 14px!important;}
+	.links .hldr .left, .links .hldr .right { max-width: 100%!important; padding-left: 0px!important; padding-right: 0px!important; float: none!important;} 
+	.links { padding: 20px 0px!important;}
+	.links .hldr .left { margin-bottom: 20px!important;}
+	.about .sec-3 .slider-nav .slick-track { display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;  -webkit-flex-flow: row wrap;  justify-content: flex-start;  flex-wrap: wrap;}
+	
+	.home .sec-2 .list-hldr .main-list > li { width: 50%!important;}
+
+
+
+}
+
+
+
+
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 600px){
+
+	.cs-container, footer .footer-wrap, .wrapper, .about .sec-3 .slider-nav .slick-list {padding: 0px 20px!important;}
+	.about .sec-3 .slider-nav {padding: 10px 20px!important;}
+	header .hldr article { display: none;}
+	.burger  {bottom: auto!important; top: 50%; transform: translate(0, -50%);}
+	header .nav-list { padding: 60px 20px!important;}
+
+
+	/*FONTS change*/
+	.home .sec-1 .hero h3  {font-size: 35px!important;}
+
+	.home .sec-1 .hero h4 { font-size: 20px!important; line-height: 20px!important;}
+
+	.sec-title, .about .sec-2 .hldr h3, .about .sec-2 .btm h3 { font-size: 25px!important;}
+
+	.home .sec-3 .hldr .main-list > li .parent article h4 { font-size: 20px!important;}
+
+	.home .sec-3 .hldr .main-list > li .parent article p, .home .sec-5 .hldr h3 + p, .home .sec-7 .testi-carousel .item .hldr article p, .about .sec-2 .hldr p, .about .sec-2 .btm p, .about .sec-3 .slider-for .item .hldr article p, .about .sec-4 .hldr p, .about .sec-6 .hldr p  {font-size: 16px!important; line-height: 26px!important;}
+	.about .sec-3 .slider-nav .slick-slide h4 {font-size: 16px!important; padding: 10px 0px!important;}
+
+	/*END OF FONTS CHANGE*/
+
+	/*SECTION PADDING*/
+	.home .sec-3, .home .sec-4, .home .sec-5, .home .sec-7, .home .sec-7, .about .sec-2, .about .sec-3 .top-part, .about .sec-4, .about .sec-6, .home .sec-2 { padding: 40px 0px!important;}
+	.about .sec-6 { padding-top: 20px!important;}
+	/*END OF SECTION PADDING*/
+
+
+	.home .sec-1 .hero { padding: 0px 20px!important;}
+	.prop-finder .btm .main-list > li:last-child, .prop-finder .btm .main-list > li:last-child input[type="submit"]  {width: 100%!important;}
+	.home .sec-3 .hldr .main-list > li { width: 100%!important; margin-bottom: 50px!important;}
+	.home .sec-3 .hldr .main-list > li:nth-child(odd) { padding-right: 0!important;}
+	.home .sec-3 .hldr .main-list > li:nth-child(even) { padding-left: 0px!important;}
+
+	.home .sec-4 .hldr article ul li:nth-child(odd) { padding-right: 0px!important;}
+	.home .sec-4 .hldr article ul li:nth-child(even) { padding-left: 0px!important;}
+	.home .sec-4 .hldr article ul li { width: 100%!important;}
+
+	.links .hldr .cmn-class { text-align: left!important; padding: 10px 40px 10px 10px!important;}
+	.links .hldr .cmn-class .arr-hldr { width: 35px!important;}
+	.home .sec-5 .hldr .main-list li { width: 100%!important; margin-bottom: 40px!important;}
+	.home .sec-5 .hldr .main-list li:nth-last-child(3) {margin-bottom: 40px!important;} 
+	.home .sec-6 .tumulong-carousel .owl-dots, .about .sec-5 .misyon-carousel .owl-dots { position: relative!important; left: 0!important; bottom: 0!important; transform: translate(0, 0)!important; padding: 10px 0px;}
+
+	footer .hldr .btm .main-list > li:nth-child(2), footer .hldr .btm .main-list > li:nth-child(3){ width: 50%!important; margin-bottom: 30px; padding: 0px!important;} 
+	footer .hldr .btm .main-list > li:nth-child(2) { padding-right: 15px!important;}
+	footer .hldr .btm .main-list > li:nth-child(3) { padding-left: 15px!important; border-right: 0px!important}
+	footer .hldr .btm .main-list > li:last-child { width: 100%!important; padding: 0px!important;}
+	footer .hldr .top { max-width: 100%!important; min-width: auto!important;}
+	footer .hldr .top .parent input[type="submit"] { position: relative!important; top: 0!important; right: 0!important; width: 100%!important; margin-top: 15px;}
+	.quote { margin: 20px 0px!important;}
+	.about .sec-3 .slider-for .item .hldr article .block h4 {font-size: 40px!important;}
+	.about .sec-3 .slider-for .item .hldr article .block {padding: 15px!important;}
+	.about .sec-3 .slider-for .item .hldr aside .img-hldr { height: auto!important;}
+		
+	.home .sec-4 .hldr aside { height: auto!important; }
+	.home .sec-4 .hldr aside { max-width: 100%!important;}
+	.home .sec-4 .hldr aside img {height: auto!important}
+
+	.home .sec-2 .list-hldr .main-list > li { width: 100%!important; margin-bottom: 30px!important;}
+	.home .sec-2 .list-hldr .main-list > li .parent {display: block!important; }
+	.home .sec-2 .list-hldr .main-list > li .parent aside img { margin: 0 auto 10px; display: block; max-width: 100%;}
+	.home .sec-2 .list-hldr .main-list > li .parent article { text-align: center; padding-left: 0px!important;}
+	.home .sec-2 .list-hldr .main-list > li:last-child { margin-bottom: 0px!important;}
+	.home .sec-2 .list-hldr .main-list > li .parent article .count { padding: 5px 20px!important; font-size: 18px!important;}
+
+}
