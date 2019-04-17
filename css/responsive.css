@@ -12,7 +12,7 @@
 	/*END OF FONTS 1st changes*/
 
 	/*SECTION PADDING*/
-	.home .sec-3, .home .sec-4, .home .sec-5, .home .sec-7, .home .sec-7, .about .sec-2, .about .sec-3 .top-part, .about .sec-4, .about .sec-6, .home .sec-2 { padding: 50px 0px!important;}
+	.home .sec-3, .home .sec-4, .home .sec-5, .home .sec-7, .home .sec-7, .about .sec-2, .about .sec-3 .top-part, .about .sec-4, .about .sec-6, .home .sec-2, .news-events-inner .sec-1 { padding: 50px 0px!important;}
 	/*END OF SECTION PADDING*/
 
 	/*title margin*/
@@ -35,6 +35,8 @@
 	.links .hldr .left, .links .hldr .right { max-width: 50%!important;}
 	.links .hldr .cmn-class h5 a { font-size: 15px!important;}
 	.inner-wrap { max-width: 100%!important;}
+	.ne-list-sec .body, .ne-list-sec .btm, .articles-sec .body, .promos-sec .body { padding: 30px 20px!important;}
+	.ne-list-sec .btm .news-events-carousel { padding: 0px 30px!important;}
 
 }
 
@@ -49,6 +51,7 @@
 	/*END OF FONTS- change*/
 	
 	.cs-container { max-width: 100%!important; padding: 0px 30px!important;}
+	header {     box-shadow: 0px 2px 5px #d5d5d5; }
 	header .hldr article ul li { display: none;}
 	header .hldr article ul li:first-child, header .hldr article ul li:nth-child(2) { display: block;}
 	header .hldr article ul li img { width: 30px!important; height: 30px!important;}
@@ -116,6 +119,21 @@
 
 	.home .sec-4 .hldr article ul li .text-hldr { max-width: 100%!important;}
 
+	.ne-list-sec .body .masonry > li:nth-child(1), .ne-list-sec .body .masonry > li:nth-child(2), .ne-list-sec .body .masonry > li:nth-child(3) { width: 100%!important; padding-left: 0px!important; padding-right: 0px!important;}
+
+	.ne-list-sec .body .masonry > li:nth-child(2) { position: relative!important; left: 0!important; transform: translate(0, 0)!important;}
+	.ne-list-sec .body .masonry > li:nth-child(1)::after, .ne-list-sec .body .masonry > li:nth-child(3)::after { display: none!important;}
+
+	.ne-list-sec .body .masonry > li {  padding-top: 0px!important;  padding-bottom: 30px!important; border-bottom: 2px solid #bdbebf!important; margin-bottom: 30px!important; }
+	.ne-list-sec .body .masonry > li .item:nth-of-type(2) { padding-top: 30px!important; padding-top: 30px!important;}
+
+	.ne-list-sec .body .masonry > li:last-child { padding-bottom: 0px!important; margin-bottom: 0px!important; border-bottom: 0px!important;}
+
+	.ne-list-sec .top, .articles-sec .top, .promos-sec .top { padding: 15px 0px!important;}
+
+	.news-events .sec-1.animated .ne-list-sec .body .masonry > li:nth-child(2) {     animation: fade-up 1s ease-in-out forwards!important; -webkit-animation: fade-up 1s ease-in-out forwards!important; animation-delay: .5s!important;}
+
+
 }
 
 
@@ -161,13 +179,14 @@
 
 	.home .sec-3 .hldr .main-list > li .parent article h4 { font-size: 20px!important;}
 
-	.home .sec-3 .hldr .main-list > li .parent article p, .home .sec-5 .hldr h3 + p, .home .sec-7 .testi-carousel .item .hldr article p, .about .sec-2 .hldr p, .about .sec-2 .btm p, .about .sec-3 .slider-for .item .hldr article p, .about .sec-4 .hldr p, .about .sec-6 .hldr p  {font-size: 16px!important; line-height: 26px!important;}
+	.home .sec-3 .hldr .main-list > li .parent article p, .home .sec-5 .hldr h3 + p, .home .sec-7 .testi-carousel .item .hldr article p, .about .sec-2 .hldr p, .about .sec-2 .btm p, .about .sec-3 .slider-for .item .hldr article p, .about .sec-4 .hldr p, .about .sec-6 .hldr p, .ne-list-sec .body .masonry > li .item p, .news-events-inner .sec-1 .hldr .content p, .news-events-inner .sec-1 .hldr > ul > li  {font-size: 16px!important; line-height: 26px!important;}
+
 	.about .sec-3 .slider-nav .slick-slide h4 {font-size: 16px!important; padding: 10px 0px!important;}
 
 	/*END OF FONTS CHANGE*/
 
 	/*SECTION PADDING*/
-	.home .sec-3, .home .sec-4, .home .sec-5, .home .sec-7, .home .sec-7, .about .sec-2, .about .sec-3 .top-part, .about .sec-4, .about .sec-6, .home .sec-2 { padding: 40px 0px!important;}
+	.home .sec-3, .home .sec-4, .home .sec-5, .home .sec-7, .home .sec-7, .about .sec-2, .about .sec-3 .top-part, .about .sec-4, .about .sec-6, .home .sec-2, .news-events-inner .sec-1 { padding: 40px 0px!important;}
 	.about .sec-6 { padding-top: 20px!important;}
 	/*END OF SECTION PADDING*/
 
@@ -209,5 +228,43 @@
 	.home .sec-2 .list-hldr .main-list > li .parent article { text-align: center; padding-left: 0px!important;}
 	.home .sec-2 .list-hldr .main-list > li:last-child { margin-bottom: 0px!important;}
 	.home .sec-2 .list-hldr .main-list > li .parent article .count { padding: 5px 20px!important; font-size: 18px!important;}
+
+	.ne-list-sec .body, .ne-list-sec .btm, .articles-sec .body, .promos-sec .body { padding: 20px 15px!important;}
+
+	.ne-list-sec .body .masonry > li .item p { margin-bottom: 20px!important;}
+
+	.ne-list-sec .btm .news-events-carousel .item aside { max-width: 100%!important; }
+	.ne-list-sec .btm .news-events-carousel .item aside img { height: 100%!important; object-fit: cover!important;}
+	.ne-list-sec .btm .news-events-carousel .item article { padding-left: 0px!important; padding-top: 10px; width: 100%!important;}
+
+	.ne-list-sec .btm .news-events-carousel .item aside, .articles-sec .body .articles-carousel .item aside, .promos-sec .body .promos-carousel .item aside { height: 180px!important;}
+
+
+	.ne-list-sec .btm .news-events-carousel .owl-nav .owl-prev  {background: url(../images/white-arrow-left.png) no-repeat!important; margin: 0px!important; top: 75px; left: 10px!important;}
+	.ne-list-sec .btm .news-events-carousel .owl-nav .owl-next  {background: url(../images/white-arrow-right.png) no-repeat!important; margin: 0px!important; top: 75px; right: 10px!important;}
+
+
+	.articles-sec .body .articles-carousel .owl-nav, .promos-sec .body .promos-carousel .owl-nav { top: 100px!important; transform: translate(0, 0)!important;}
+	.articles-sec .body .articles-carousel .owl-nav .owl-prev, .promos-sec .body .promos-carousel .owl-nav .owl-prev {background: url(../images/white-arrow-left.png) no-repeat!important; margin: 0px!important; left: 10px!important}
+	.articles-sec .body .articles-carousel .owl-nav .owl-next, .promos-sec .body .promos-carousel .owl-nav .owl-next {background: url(../images/white-arrow-right.png) no-repeat!important; margin: 0px!important; right: 10px!important}
+
+
+	
+	.ne-list-sec .btm .news-events-carousel, .articles-sec .body .articles-carousel, .promos-sec .body .promos-carousel { padding: 0px!important;}
+
+	.ne-list-sec .top, .articles-sec .top, .promos-sec .top { padding: 10px 0px!important;}
+
+	.promos-sec .body .promos-carousel .item article h4 { font-size: 18px!important;}
+
+	a.rm-gray { padding: 10px 25px!important; font-size: 14px!important;}
+
+
+	.news-events-inner .sec-1 .hldr > ul > li { width: 100%!important; padding-right: 0px!important; text-align: center;}
+	.news-events-inner .sec-1 .hldr > ul > li::after { display: none!important;}
+
+	.news-events-inner .sec-1 .hldr .btns-hldr .left ul li a, .news-events-inner .sec-1 .hldr .btns-hldr > div a { padding: 10px 30px!important; font-size: 14px!important;}
+
+	.news-events-inner .sec-1 .hldr .btns-hldr .left, .news-events-inner .sec-1 .hldr .btns-hldr .right { float: none!important; text-align: center;}
+	.news-events-inner .sec-1 .hldr .btns-hldr .left ul li { width: 100%!important; padding-right: 0px!important; margin-bottom: 15px; text-align: center;}
 
 }
