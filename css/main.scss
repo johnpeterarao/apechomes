@@ -613,10 +613,10 @@ header.mg-btm { margin-bottom: 56px;}
 .news-events-inner {
     .sec-1 { padding: 90px 0px;
         .hldr {
-            h4 { font-family: $fonthead; margin-bottom: 20px;}
+            h4 { font-family: $fonthead; margin-bottom: 20px; opacity: 0;}
 
             > ul { padding: 10px 15px; background: #d6d7d8; @extend .flex; justify-content: center; margin-bottom: 20px;
-                > li {  padding-right: 26px; font-family: $fontmain; font-size: 17px; position: relative;}
+                > li {  padding-right: 26px; font-family: $fontmain; font-size: 17px; position: relative; opacity: 0;}
 
                 > li::after { position: absolute; content: ''; width: 2px; background: #575759; top: 0; bottom: 0; right: 12px; background: #909092; }
 
@@ -624,7 +624,7 @@ header.mg-btm { margin-bottom: 56px;}
                 > li:last-child::after { display: none; }
             }
 
-            .content { 
+            .content { opacity: 0; 
                 p { font-family: $fontmain; font-size: 17px; line-height: 23px; margin-bottom: 30px;}
 
                 aside { margin: 30px 0px;
@@ -862,6 +862,22 @@ header.mg-btm { margin-bottom: 56px;}
     }
 }
 
+
+.news-events-inner {
+    .sec-1.animate{
+
+        .hldr {
+            > h4 { animation: show-onload 1s ease-in-out forwards; -webkit-animation: show-onload 1s ease-in-out forwards}
+
+            > ul {
+                li { animation: show-onload 1s ease-in-out forwards; -webkit-animation: show-onload 1s ease-in-out forwards; animation-delay: 0.7s;}
+            }
+
+            .content {     animation: fade-up 1s ease-in-out forwards; -webkit-animation: fade-up 1s ease-in-out forwards; animation-delay: 1s;}
+        }
+        
+    }
+}
 
 
 
