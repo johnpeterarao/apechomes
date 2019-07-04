@@ -528,20 +528,17 @@
 
 
 
+        $('#uploadResume').on("change",function(){
+          
+          var filename = $(this).val().split('\\').pop();
 
+          $('.place-holder').text(filename);
+
+        });
 
         $('#uploadResumeBtn').on("click",function() { 
           var imgVal = $('#uploadResume').val(); 
           $('#uploadResume').trigger("click");
-
-
-          if( imgVal == ''){
-            $('.place-holder').addClass('active');
-          } else {
-            $('.place-holder').text(imgVal);
-          }
-
-
         }); 
 
     });

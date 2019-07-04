@@ -98,7 +98,7 @@ input, select, textarea, button {
   right: 10px;
   top: 10px; }
 
-.flex, header .hldr article ul, header .nav-list ul, header .nav-list ul li, .home .sec-2 .list-hldr .main-list, .home .sec-2 .list-hldr .main-list > li .parent, .home .sec-3 .hldr .main-list, .home .sec-3 .hldr .main-list > li .parent, .home .sec-4 .hldr, .home .sec-5 .hldr .main-list, .home .sec-7 .testi-carousel .item, .home .sec-7 .testi-carousel .item .hldr, .home .sec-7 .testi-carousel .item .hldr article, .home .sec-7 .testi-carousel .owl-stage, .about .sec-3 .slider-for .item .hldr, .news-events-inner .sec-1 .hldr > ul, .news-events-inner .sec-1 .hldr .btns-hldr .left ul, .team .sec-2 .hldr-top ul, .team .sec-2 .hldr-top ul li .box, .team .sec-2 .hldr-top ul li .box aside, .team .sec-2 .steps .body .main-list > li .step-nm, .form-gray .form-sec .form-body .form-main-list li .parent, .form-gray .policy-hldr, .careers .sec-2 .hldr .career-list, .careers .sec-2 .hldr .career-list li aside, .contact-us .sec-1 .contact-btm .icon-list li aside, .buyers-guide .sec-2 .hldr > ul > li .parent, .buyers-guide .sec-2 .hldr .ready-move .hldr a, .accord .acc-title .acc-icon, .accord .acc-title .title-center, .ne-list-sec .body .masonry, .ne-list-sec .btm .news-events-carousel .item, .prop-finder .btm .main-list, .prop-finder .btm .main-list > li:first-child ul, .links .hldr .cmn-class .arr-hldr a, footer .hldr .btm .main-list, footer .hldr .btm .main-list > li:last-child > ul li .phone {
+.flex, header .hldr article ul, header .nav-list ul, header .nav-list ul li, .home .sec-2 .list-hldr .main-list, .home .sec-2 .list-hldr .main-list > li .parent, .home .sec-3 .hldr .main-list, .home .sec-3 .hldr .main-list > li .parent, .home .sec-4 .hldr, .home .sec-5 .hldr .main-list, .home .sec-7 .testi-carousel .item, .home .sec-7 .testi-carousel .item .hldr, .home .sec-7 .testi-carousel .item .hldr article, .home .sec-7 .testi-carousel .owl-stage, .about .sec-3 .slider-for .item .hldr, .news-events-inner .sec-1 .hldr > ul, .news-events-inner .sec-1 .hldr .btns-hldr .left ul, .team .sec-2 .hldr-top ul, .team .sec-2 .hldr-top ul li .box, .team .sec-2 .hldr-top ul li .box aside, .team .sec-2 .steps .body .main-list > li .step-nm, .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up, .form-gray .form-sec .form-body .form-main-list li .parent, .form-gray .policy-hldr, .careers .sec-2 .hldr .career-list, .careers .sec-2 .hldr .career-list li aside, .contact-us .sec-1 .contact-btm .icon-list li aside, .buyers-guide .sec-2 .hldr > ul > li .parent, .buyers-guide .sec-2 .hldr .ready-move .hldr a, .accord .acc-title .acc-icon, .ne-list-sec .body .masonry, .ne-list-sec .btm .news-events-carousel .item, .prop-finder .btm .main-list, .prop-finder .btm .main-list > li:first-child ul, .links .hldr .cmn-class .arr-hldr a, footer .hldr .btm .main-list, footer .hldr .btm .main-list > li:last-child > ul li .phone {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1009,7 +1009,7 @@ header.mg-btm {
   .team .sec-2 .hldr-top {
     margin-bottom: 80px; }
     .team .sec-2 .hldr-top h3 {
-      font-family: "CenturyGothic-Bold", Arial, sans-serif;
+      font-family: "open_sansbold", Arial, sans-serif;
       font-size: 60px;
       color: #006ea6;
       text-transform: uppercase;
@@ -1046,7 +1046,7 @@ header.mg-btm {
               margin: 0 auto;
               display: block; }
         .team .sec-2 .hldr-top ul li .tog {
-          padding: 21px 15px 21px 50px;
+          padding: 21px 15px 21px 60px;
           text-align: center;
           border-radius: 30px;
           position: absolute;
@@ -1064,8 +1064,9 @@ header.mg-btm {
             border-radius: 50%;
             position: absolute;
             left: 5px;
-            top: 8px;
-            overflow: hidden; }
+            top: 50%;
+            overflow: hidden;
+            transform: translate(0, -50%); }
             .team .sec-2 .hldr-top ul li .tog .checkhldr aside {
               position: absolute;
               width: 32px;
@@ -1205,16 +1206,45 @@ header.mg-btm {
     padding-right: 60px; }
   .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up {
     width: 144px;
-    position: relative; }
-    .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up > div {
-      position: absolute;
+    position: relative;
+    align-items: center;
+    justify-content: center; }
+    .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up .frame {
       width: 144px;
       background: #fff;
       height: 144px;
-      top: 50%;
-      transform: translate(0, -50%);
-      left: 0;
-      border: 1px solid #bcbdbe; }
+      border: 1px solid #bcbdbe;
+      position: relative; }
+      .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up .frame img {
+        width: 100%;
+        height: 100%; }
+      .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up .frame img[src=""] {
+        display: none; }
+      .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up .frame .hero-text {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 100%;
+        padding: 0px 20px;
+        text-align: center; }
+        .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up .frame .hero-text span {
+          font-family: "open_sansregular", Arial, sans-serif;
+          font-size: 14px;
+          color: #4d4d4f;
+          display: block;
+          margin-bottom: 5px;
+          font-style: italic; }
+        .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up .frame .hero-text button {
+          background: #4d4d4f;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: #fff;
+          border: 0;
+          padding: 5px 15px;
+          border-radius: 10px; }
+        .team-inner .form-gray .form-sec .form-body .form-main-list li .parent .photo-up .frame .hero-text input[type="file"] {
+          display: none; }
 
 .form-gray .form-sec .form-title {
   background: #4d4d4f;
@@ -1639,7 +1669,7 @@ header.mg-btm {
     border-bottom: 0px; }
   .buyers-guide .sec-2 .hldr .ready-move {
     background: #dbecff;
-    padding: 40px 0px; }
+    padding: 40px 50px; }
     .buyers-guide .sec-2 .hldr .ready-move .hldr {
       max-width: 46.30%;
       width: 100%;
@@ -1668,6 +1698,80 @@ header.mg-btm {
         text-decoration: none;
         font-family: "open_sansbold", Arial, sans-serif;
         margin: 10px auto 0px; }
+    .buyers-guide .sec-2 .hldr .ready-move .move-panel {
+      padding: 40px;
+      background: #fff;
+      display: none; }
+      .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li {
+        margin-bottom: 40px; }
+        .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li > h4 {
+          font-family: "open_sansbold", Arial, sans-serif;
+          font-size: 20px;
+          color: #4d4d4f;
+          line-height: 26px; }
+        .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li > .alb-list {
+          margin-top: 30px;
+          padding-left: 25px;
+          list-style-type: upper-alpha; }
+          .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li > .alb-list > li {
+            margin-bottom: 15px;
+            font-family: "open_sansbold", Arial, sans-serif;
+            font-size: 18px;
+            color: #4d4d4f; }
+            .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li > .alb-list > li > h5 {
+              font-family: "open_sansbold", Arial, sans-serif;
+              font-size: 18px;
+              color: #4d4d4f; }
+        .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .inner-list {
+          font-family: "open_sansregular", Arial, sans-serif;
+          font-size: 18px;
+          color: #4d4d4f; }
+          .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .inner-list > li {
+            position: relative;
+            margin-bottom: 5px;
+            padding-left: 25px; }
+          .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .inner-list > li::after {
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #4d4d4f;
+            border-radius: 50%;
+            left: 9px;
+            top: 10px; }
+        .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .title-hldr {
+          text-align: center;
+          margin-top: 40px;
+          margin-bottom: 10px; }
+          .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .title-hldr h4 {
+            display: inline-block;
+            font-size: 20px;
+            color: #fff;
+            background: #006ea6;
+            padding: 10px 40px;
+            font-family: "open_sansbold", Arial, sans-serif;
+            text-transform: uppercase;
+            min-width: 430px;
+            text-align: center;
+            margin: 0 auto; }
+        .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li p {
+          font-family: "open_sansregular", Arial, sans-serif;
+          font-size: 18px;
+          color: #4d4d4f; }
+        .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .marg-top {
+          margin-top: 15px; }
+        .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .reminder-move {
+          text-align: center;
+          margin-top: 25px; }
+          .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .reminder-move h5 {
+            font-family: "open_sansbold", Arial, sans-serif;
+            font-size: 20px;
+            color: #4d4d4f;
+            margin-bottom: 10px; }
+          .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li .reminder-move ul li {
+            margin-bottom: 5px; }
+      .buyers-guide .sec-2 .hldr .ready-move .move-panel .panel-mlist > li:last-of-type {
+        margin-bottom: 0px; }
 
 .accord {
   /* .acc-body.active { height: auto;} */ }
@@ -1676,10 +1780,11 @@ header.mg-btm {
     background: #fff;
     border: 1px solid #c4c5c5;
     padding-left: 64px;
-    cursor: pointer; }
+    cursor: pointer;
+    min-height: 46px; }
     .accord .acc-title .acc-icon {
       position: absolute;
-      height: 44px;
+      height: 100%;
       width: 44px;
       top: 0px;
       background: #4d4d4f;
@@ -1691,18 +1796,20 @@ header.mg-btm {
         font-size: 25px;
         transform: translate(0, 0) rotate(0);
         transition: transform .2s ease-in-out; }
-    .accord .acc-title .title-center {
-      align-items: center;
-      justify-content: space-between; }
-      .accord .acc-title .title-center h4 {
-        font-family: "open_sansbold", Arial, sans-serif;
-        font-size: 22px;
-        color: #4d4d4f; }
-      .accord .acc-title .title-center h6 {
-        font-size: "open_sansregular", Arial, sans-serif;
-        font-style: italic;
-        font-size: 14px;
-        padding: 0px 20px; }
+    .accord .acc-title .title-center h4 {
+      font-family: "open_sansbold", Arial, sans-serif;
+      font-size: 22px;
+      color: #4d4d4f;
+      padding-right: 200px; }
+    .accord .acc-title .title-center h6 {
+      font-family: "open_sansregular", Arial, sans-serif;
+      font-style: italic;
+      font-size: 14px;
+      padding: 0px 20px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%); }
   .accord .acc-body {
     background: #fff;
     height: 0;

@@ -824,7 +824,7 @@
                         </li>
                       </ul>
 
-                      <ul class="pad-0 listn policy-hldr">
+                      <ul class="pad-0 listn policy-hldr careers">
                         <li>
                           <h5>* Required Fields</h5>
                         </li>
@@ -1080,7 +1080,13 @@
         });
 
 
+        $('#uploadResume').on("change",function(){
+          
+          var filename = $(this).val().split('\\').pop();
 
+          $('.place-holder').text(filename);
+
+        });
 
 
         $('#uploadResumeBtn').on("click",function() { 

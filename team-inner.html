@@ -140,7 +140,13 @@
                           </ul>
                         </article>
                         <aside class="photo-up">
-                          <div>
+                          <div class="frame">
+                            <img id="blah" alt="your image" src=""/ class="optional">
+                            <div class="hero-text" >
+                              <span>2x2 photo</span>
+                              <button id="btn_image">Upload</button>
+                              <input type="file" onchange="readURL(this);" id="file_image" >
+                            </div>
 
                           </div>
                         </aside>
@@ -483,8 +489,31 @@
 
   <script type="text/javascript">
 
+    function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+    }
+    
+
+    
+
+    $(document).ready(function(){
+
+      $('#btn_image').on('click', function(){
+        $('#file_image').trigger("click");
+      });
+    });
     
     
+
 
     
   </script>

@@ -716,7 +716,7 @@ header.mg-btm { margin-bottom: 56px;}
 
     .sec-2 { padding: 80px 0px;
         .hldr-top { margin-bottom: 80px;
-            h3 { font-family: $fonthead; font-size: 60px; color: $blue; text-transform: uppercase; text-align: center; margin-bottom: 10px;}
+            h3 { font-family: $fonthead2; font-size: 60px; color: $blue; text-transform: uppercase; text-align: center; margin-bottom: 10px;}
             p { font-family: $fontmain2; text-align: center; font-size: 22px; max-width: 43%; width: 100%; margin: 0 auto; margin-bottom: 60px;}
 
             ul { max-width: 72%; width: 100%; margin: 0 auto;  @extend .flex;
@@ -727,9 +727,10 @@ header.mg-btm { margin-bottom: 56px;}
                         }
                     }
 
-                    .tog { padding: 21px 15px 21px 50px; text-align: center;     border-radius: 30px; position: absolute; width: calc(100% - 10%); bottom: 0;
+                    .tog { padding: 21px 15px 21px 60px; text-align: center;     border-radius: 30px; position: absolute; width: calc(100% - 10%); bottom: 0;
                         h4 { font-size: 18px; font-family: $fonthead2; color: #fff; text-transform: uppercase;}
-                        .checkhldr { width: 45px; height: 45px; background: $white; border-radius: 50%; position: absolute; left: 5px; top: 8px; overflow: hidden;
+                        .checkhldr {     width: 45px; height: 45px; background: #fff; border-radius: 50%; position: absolute; left: 5px; top: 50%; overflow: hidden; transform: translate(0, -50%);
+ 
                             aside {     position: absolute; width: 32px; top: 9px; left: 6px;
 
                                 .first-cover { width: 32px; left: 0; position: absolute; background: #fff; bottom: 0;  height: 26px; }
@@ -829,10 +830,21 @@ header.mg-btm { margin-bottom: 56px;}
 
                         .phto-hldr { margin: 0px;}
 
-                        .parent { 
+                        .parent {  
                             .for-photo { width: calc(100% - 144px); padding-right: 60px;}
-                            .photo-up { width: 144px;  position: relative;
-                                > div {     position: absolute; width: 144px; background: #fff; height: 144px; top: 50%; transform: translate(0, -50%); left: 0; border: 1px solid #bcbdbe;}
+                            .photo-up { width: 144px;  position: relative; @extend .flex; align-items: center; justify-content: center;
+                                .frame {   width: 144px; background: #fff; height: 144px; border: 1px solid #bcbdbe; position: relative;
+
+                                    img { width: 100%; height: 100%;}
+
+                                    img[src=""] { display: none; }
+
+                                    .hero-text { position: absolute; top: 50%; transform: translate(-50%, -50%); left: 50%; width: 100%; padding: 0px 20px; text-align: center;
+                                        span { font-family: $fontmain2; font-size: 14px; color: $gray; display: block; margin-bottom: 5px; font-style: italic;}
+                                        button { background: $gray; font-size: 16px; text-transform: uppercase; color: $white; border: 0; padding: 5px 15px; border-radius: 10px;} 
+                                        input[type="file"] { display: none;}
+                                    }
+                                }
                             }
                         }
                     }
@@ -1135,7 +1147,7 @@ header.mg-btm { margin-bottom: 56px;}
             }
 
 
-            .ready-move { background: #dbecff; padding: 40px 0px;
+            .ready-move { background: #dbecff; padding: 40px 50px;
                 .hldr { max-width: 46.30%; width: 100%; margin: 0 auto;
                     aside { max-width: 275px; margin: 0 auto 20px; width: 100%;
 
@@ -1144,6 +1156,51 @@ header.mg-btm { margin-bottom: 56px;}
                         
                         a { width: 100%; background: $blue; font-size: 20px; color: $white; max-width: 430px; text-align: center; height: 57px; @extend .flex; justify-content: center; align-items: center; text-transform: uppercase; text-decoration: none; font-family: $fonthead2; margin: 10px auto 0px;}
 
+                }
+
+
+
+                .move-panel { padding: 40px; background: $white; display: none;
+                    .panel-mlist {
+                        >li { margin-bottom: 40px;
+                            > h4 { font-family: $fonthead2; font-size: 20px; color: $gray; line-height: 26px;}
+                            > .alb-list { margin-top: 30px; padding-left: 25px; list-style-type: upper-alpha;
+                                > li { margin-bottom: 15px;  font-family: $fonthead2; font-size: 18px;  color: $gray;
+                                    > h5 { font-family: $fonthead2; font-size: 18px;color: $gray;}
+                                    
+                                    
+
+                                    
+                                }
+                            }
+
+                            .inner-list { font-family: $fontmain2; font-size: 18px; color: $gray; 
+                                        > li { position: relative; margin-bottom: 5px; padding-left: 25px;}
+                                        > li::after { position: absolute; content: ''; width: 6px; height: 6px; background: $gray; border-radius: 50%; left: 9px; top: 10px;}
+                            }
+
+                            .title-hldr { text-align: center; margin-top: 40px; margin-bottom: 10px;
+                                h4 {     display: inline-block; font-size: 20px; color: #fff; background: #006ea6; padding: 10px 40px; font-family: "open_sansbold", Arial, sans-serif; text-transform: uppercase; min-width: 430px; text-align: center; margin: 0 auto;  }
+                            }
+
+                            p { font-family: $fontmain2; font-size: 18px; color: $gray; }
+
+                            .marg-top { margin-top: 15px;}
+
+
+                            .reminder-move { text-align: center; margin-top: 25px;
+                                h5 { font-family: $fonthead2; font-size: 20px;color: $gray; margin-bottom: 10px;}
+                                ul {
+                                    li { margin-bottom: 5px;
+
+                                    }
+                                }
+
+                            }
+                        }
+
+                        >li:last-of-type { margin-bottom: 0px;}
+                    }
                 }
             }
 
@@ -1157,15 +1214,15 @@ header.mg-btm { margin-bottom: 56px;}
 
 
 .accord {
-    .acc-title { padding: 10px 0px; background: #fff; border: 1px solid #c4c5c5; padding-left: 64px; cursor: pointer;
+    .acc-title { padding: 10px 0px; background: #fff; border: 1px solid #c4c5c5; padding-left: 64px; cursor: pointer; min-height: 46px;
         
-        .acc-icon {    position: absolute; height: 44px; width: 44px; top: 0px; background: $gray; @extend .flex; justify-content: center; align-items: center; left: 0; 
+        .acc-icon {    position: absolute; height: 100%; width: 44px; top: 0px; background: $gray; @extend .flex; justify-content: center; align-items: center; left: 0; 
             i { color: $white; font-size: 25px; transform: translate(0, 0) rotate(0); transition: transform .2s ease-in-out; }
         }
 
-        .title-center { @extend .flex; align-items: center; justify-content: space-between; 
-            h4 { font-family: $fonthead2; font-size: 22px;  color: $gray; }
-            h6 { font-size: $fontmain2; font-style: italic; font-size: 14px; padding: 0px 20px;}
+        .title-center {  
+            h4 { font-family: $fonthead2; font-size: 22px;  color: $gray; padding-right: 200px;}
+            h6 { font-family: $fontmain2; font-style: italic; font-size: 14px; padding: 0px 20px; position: absolute; right: 0; top: 50%; transform: translate(0, -50%);}
         }
 
     }
